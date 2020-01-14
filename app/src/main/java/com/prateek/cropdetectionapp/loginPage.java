@@ -1,4 +1,4 @@
-package com.g.ui;
+package com.prateek.cropdetectionapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
