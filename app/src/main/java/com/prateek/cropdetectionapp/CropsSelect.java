@@ -10,9 +10,6 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import com.g.ui.Adapters.CustomAdapter;
-import com.g.ui.R;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -13,8 +13,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.g.ui.Adapters.SliderAdapter;
-import com.g.ui.R;
 
 public class SlidingActivity extends AppCompatActivity {
 

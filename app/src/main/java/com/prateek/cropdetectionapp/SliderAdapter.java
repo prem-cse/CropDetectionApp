@@ -19,7 +19,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
-import com.g.ui.R;
 
 public class SliderAdapter extends PagerAdapter {
 

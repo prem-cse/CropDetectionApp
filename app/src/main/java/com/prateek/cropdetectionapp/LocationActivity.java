@@ -9,7 +9,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.g.ui.R;
 
 public class LocationActivity extends AppCompatActivity {
 

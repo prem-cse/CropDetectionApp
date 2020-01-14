@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".loginPage"></activity>
+        <activity android:name=".CropsSelect"></activity>
+        <activity android:name=".LocationActivity"></activity>
+        <activity android:name=".Selected"></activity>
+        <activity android:name=".SignupPage"></activity>
+        <activity android:name=".SlidingActivity"></activity>
     </application>
 
 </manifest>

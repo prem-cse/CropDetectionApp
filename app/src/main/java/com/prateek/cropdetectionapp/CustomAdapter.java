@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
-import com.g.ui.R;
 
 public class CustomAdapter extends BaseAdapter {
     Context context;
