@@ -7,6 +7,8 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
     
     Button loginButton, acceptButton;
+    TextView tac;
+
 
 
     @Override
@@ -20,6 +22,50 @@ public class MainActivity extends AppCompatActivity {
 
         loginButton = findViewById(R.id.login);
         acceptButton = findViewById(R.id.accept);
+        
+        tac = findViewById(R.id.tac);
+        tac.setHighlightColor(getResources().getColor(R.color.transparent));
+
+        String text = "I read and accept the terms of use and the privacy policy.";
+
+        SpannableString string = new SpannableString(text);
+
+        ClickableSpan c1 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget) {
+                Toast.makeText(MainActivity.this, "Terms of use", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void updateDrawState(@NonNull TextPaint ds) {
+                super.updateDrawState(ds);
+                ds.setColor(getResources().getColor(R.color.green));
+                ds.setUnderlineText(false);
+
+            }
+        };
+
+        ClickableSpan c2 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget) {
+                Toast.makeText(MainActivity.this, "Privacy Policy", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void updateDrawState(@NonNull TextPaint ds) {
+                super.updateDrawState(ds);
+                ds.setColor(getResources().getColor(R.color.green));
+                ds.setUnderlineText(false);
+
+            }
+
+        };
+
+        string.setSpan(c1, 22, 34, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE );
+        string.setSpan(c2, 43, 57, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE );
+
+        tac.setText(string);
+        tac.setMovementMethod(LinkMovementMethod.getInstance());
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
