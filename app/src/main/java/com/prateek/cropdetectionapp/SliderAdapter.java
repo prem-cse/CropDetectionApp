@@ -1,4 +1,4 @@
-package com.g.ui.Adapters;
+package com.prateek.cropdetectionapp;
 
 import android.content.Context;
 import android.view.LayoutInflater;
