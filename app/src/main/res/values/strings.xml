@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">CropDetection App</string>
+    <string name="welcome">WELCOME</string>
+    <string name="nice_to_see_you_again">Nice to see you again</string>
+    <string name="login">Login</string>
+    <string name="join_plantix">Join Plantix</string>
+    <string name="full_name">Full Name</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="sms">You will receive an SMS shortly with the verification code.</string>
+    <string name="send_code">Send Verification Code</string>
+    <string name="already">Already have a plantix account?</string>
+    <string name="skip">Skip</string>
+    <string name="loc">Access to Device Location</string>
 </resources>
