@@ -1,4 +1,4 @@
-package com.g.ui.Activities;
+package com.prateek.cropdetectionapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
