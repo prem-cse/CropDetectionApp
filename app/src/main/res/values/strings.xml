@@ -11,4 +11,7 @@
     <string name="already">Already have a plantix account?</string>
     <string name="skip">Skip</string>
     <string name="loc">Access to Device Location</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
