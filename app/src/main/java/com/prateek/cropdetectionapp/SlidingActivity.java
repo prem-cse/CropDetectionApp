@@ -18,12 +18,9 @@ public class SlidingActivity extends AppCompatActivity {
 
     private ViewPager pager;
     private LinearLayout dots;
-
     private TextView[] mDots;
-
     SliderAdapter sliderAdapter;
     int curr;
-
     Button next;
 
     @Override
@@ -35,28 +32,17 @@ public class SlidingActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_sliding);
-
         pager = (ViewPager) findViewById(R.id.viewPager);
         dots = (LinearLayout) findViewById(R.id.dot);
-
         next = (Button) findViewById(R.id.next);
-
         sliderAdapter = new SliderAdapter(this);
-
         pager.setAdapter(sliderAdapter);
-
         mdotsInit(0);
-
-
         pager.addOnPageChangeListener(viewListener);
-
-
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 pager.setCurrentItem(curr + 1);
-
             }
         });
     }
@@ -76,13 +62,8 @@ public class SlidingActivity extends AppCompatActivity {
         }
 
         if(mDots.length > 0){
-
             mDots[position].setTextColor(getResources().getColor(R.color.white));
-
         }
-
-
-
     }
 
     ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener() {
@@ -93,20 +74,14 @@ public class SlidingActivity extends AppCompatActivity {
 
         @Override
         public void onPageSelected(int i) {
-
             mdotsInit(i);
-
             curr = i;
-
             if(curr == 0){
                 next.setEnabled(true);
-
                 next.setText("Next");
             }
-
             else if (i == mDots.length-1){
                 next.setEnabled(true);
-
                 next.setText("Got it");
                 next.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -115,13 +90,10 @@ public class SlidingActivity extends AppCompatActivity {
                     }
                 });
             }
-            else
-            {
+            else {
                 next.setEnabled(true);
-
                 next.setText("Next");
             }
-
         }
 
 

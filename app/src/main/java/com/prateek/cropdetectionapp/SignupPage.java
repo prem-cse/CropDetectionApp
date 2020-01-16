@@ -24,7 +24,7 @@ public class SignupPage extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        setSupportActionBar(toolbar);
+       // setSupportActionBar(toolbar);
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
